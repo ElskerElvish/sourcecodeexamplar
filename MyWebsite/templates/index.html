@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'main.css'%}">
+    <title>Elvishaa</title> 
+</head>
+<body background="{% static 'res/media/bg/main_bg.jpg' %}">
+    <a name="hii"></a>
+   <div class="header">
+        <h1>Source Code <br>Exampler<span style="font-size: 19px;">.in</span></h1>
+   </div>
+
+   <div class="nav_container">
+    <button class="btn" id="navbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
+   </div>
+
+   <div class="overlay" id="myNav">
+       <div class="overlay_content">
+            <div class="header">
+                <h1>Source Code <br>Exampler<span style="font-size: 19px;">.in</span></h1>
+            </div>
+
+           <button class="btn active"><i class="fa fa-home"></i> Home</button>
+           <button class="btn"><i class="fa fa-address-card-o"></i> Projects</button>
+           <button class="btn"><i class="fa fa-user"></i> About</button>
+           
+           <div class="social_media">
+                <h3 align="left">Follow on: </h3>
+                <ul>
+                    <li><a class=""><i class="fa fa-facebook"></i> Facebook</a></li>  
+                    <li><a class=""><i class="fa fa-instagram"></i> Instagram</a></li>  
+                    <li><a class=""><i class="fa fa-youtube"></i> YouTube</a></li>  
+                    <li><a class=""><i class="fa fa-git"></i> GitHub</a></li>  
+                    <li><a class=""><i class="fa fa-telegram"></i> Telegram</a></li>  
+                </ul>
+            </div>
+            <p id="author" style="text-align: justify; padding:10px;">Author:<br>Elsker Elvish | Shubham Chauhan</p>
+       </div>
+    </div>
+
+    <h1 align="center">What's New!</h1>
+    <hr style="width:100px;">
+    <center> 
+        <div class="yt_video">
+            <h3>Student Management System</h3>   
+            <hr style="width:100px;">
+            <iframe src="https://www.youtube-nocookie.com/embed/r655ji9zIeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="descp">
+                <h3>Description</h3>
+                <hr style="width:100px;">
+                <p>
+                    Python based Youtube video Downloader which uses Pytube libray and tkinter GUI framwork.
+                </p>
+                <button class="download_btn btn"><i class="fa fa-download"></i> Download</button>
+            </div>    
+        </div>
+        
+        
+        <div class="yt_video">
+            <h3>Student Management System</h3>   
+            <hr style="width:100px;">
+            <iframe src="https://www.youtube-nocookie.com/embed/r655ji9zIeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="descp">
+                <h3>Description</h3>
+                <hr style="width:100px;">
+                <p>
+                    Python based Youtube video Downloader which uses Pytube libray and tkinter GUI framwork.
+                </p>
+                <button class="download_btn btn"><i class="fa fa-download"></i> Download</button>
+            </div>    
+        </div>
+
+    </center>
+
+    <div class="footer">
+        <div class="author social_media">
+            <h3>Designed and developed by: Elsker Elvish | Shubham Chauhan  </h3>
+            <h5>Copyright &copy; 2021 Elsker Elvish | Shubham Chauhan. All Rights Reserved. </h5> 
+        </div> 
+
+      
+
+        <div class="about">
+            <img src="{% static 'res/media/logo/logo.jpg' %}" hspace="15px" vspace="5px">
+            <h3>Telegram Channel Name: Tkinter GUI Python</h3>
+            <p>Here we shares graphics based desktop applications built by using Python 3.x. Get the source code free. and share your knowledge and opinion.</p>
+            <p>Language ( English + Hindi) </p>
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/main.js' %}"></script>
+</html>
